@@ -1,0 +1,64 @@
+body{
+  background-color: rgb(85, 85, 85);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.homeworks{
+  border: 2px solid rgba(219, 219, 219, 0.5);
+  max-width: 400px;
+  margin: 25px auto; 
+  color: white;
+  padding: 25px;
+}
+
+.homeworks-item{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form{
+  border: 5px solid rgba(45, 207, 99, 0.5);
+  padding: 10px;
+
+  background-color: black;
+}
+
+.firstBtn{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btncontainer button{
+  padding: 3px;
+  cursor: pointer;
+}
+
+ 
+
+ 
