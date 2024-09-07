@@ -1,6 +1,6 @@
 import React from "react";
  
-const HomeworkItem = ({id, name, actionRemove, actionSubmit, unsubHW}) => {
+const HomeworkItem = React.memo(({id, name, actionRemove, actionSubmit, unsubHW}) => {
     return(
         <div className="homeworks-item">
         <p>Id: {id} </p>
@@ -12,6 +12,6 @@ const HomeworkItem = ({id, name, actionRemove, actionSubmit, unsubHW}) => {
         </div>  
     </div>
     )
-}
+})
 
 export default HomeworkItem

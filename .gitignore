@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+./Components/Registration
+./Components/RegistrationRegistrationItems
 # testing
 /coverage
 

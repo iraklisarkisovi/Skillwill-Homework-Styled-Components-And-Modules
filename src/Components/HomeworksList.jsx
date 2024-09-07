@@ -73,6 +73,15 @@ class HomeworksList extends Component {
         alert(Callback);
     }
 
+    shouldComponentUpdate(nextState) {
+        console.log("rerender")
+        if (this.state.homeworks.id !== nextState.homeworks || this.state.submittedHomeworks !== nextState.submittedHomeworks) {
+            return true; 
+            
+        }
+        return false; 
+    }
+
     render() {
         return (
             <div className="homeworks">
@@ -90,7 +99,11 @@ class HomeworksList extends Component {
                 <br />
 
                 <div className="homework-list">
+                    <br />
                     <h4>Unsubmitted Homeworks</h4>
+                    <br />
+                  
+
                     {this.state.homeworks.map(homework => (
                         <HomeworkItem
                             key={homework.id}
@@ -104,11 +117,16 @@ class HomeworksList extends Component {
                                 this.handleAlert(`Submit this homework first: ${homework.name} id: ${homework.id}`);
                             }}
                         />
-                    ))}
+                    ))}  
+                    <hr />
+                    <br />
                 </div>
-
+               
                 <div className="submitted-homeworks">
+                    <br />
                     <h4>Submitted Homeworks</h4>
+                    <br />
+           
                     {this.state.submittedHomeworks.map(homework => (
                         <HomeworkItem
                             key={homework.id}
@@ -119,6 +137,8 @@ class HomeworksList extends Component {
                             unsubHW={this.unsubmitHomework}
                         />
                     ))}
+                    <hr />
+                    <br />
                 </div>
             </div>
         );
