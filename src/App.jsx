@@ -1,6 +1,6 @@
 import { Component } from "react"
-import './App.css';
 import Homeworkslist from "./Components/HomeworksList";
+import styles from "./Components/styles.module.css";
  
 
 

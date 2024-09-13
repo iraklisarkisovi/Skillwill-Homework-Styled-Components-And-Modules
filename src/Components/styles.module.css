@@ -12,7 +12,31 @@ body{
 .div2{
   border: 2px solid red;
   border-radius: 10px;
-  border-left: 5px solid red;
+  border-left: 6px solid red;
+}
+
+.hrHW{
+    height: 5px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.hr1{
+    height: 5px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.hr2{
+    height: 5px;
+    background-color: hsl(69, 100%, 46%);
+    border-radius: 10px;
+}
+
+.hr3{
+    height: 5px;
+    background-color: hsl(123, 100%, 39%);
+    border-radius: 10px;
 }
 
 .homeworks{
@@ -37,13 +61,6 @@ input{
   margin-bottom: 10px;
   text-align: center;
 }
-
-/* form{
-  border: 5px solid rgba(45, 207, 99, 0.5);
-  padding: 10px;
-  border-radius: 10px;
-  background-color: black;
-} */
 
 .firstBtn{
   width: 100%;
@@ -75,4 +92,3 @@ input{
   padding: 25px;
 }
 
- 
